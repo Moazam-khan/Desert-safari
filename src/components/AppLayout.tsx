@@ -15,7 +15,7 @@ const AppLayout = ({children}: Props) => {
     <Layout
       style={{
         backgroundColor:'DE3030',
-        maxWidth: '1920px',
+        maxWidth: '1400px',
         margin: 'auto',
 
       }}>

@@ -1,5 +1,6 @@
 import {Input, Row} from 'antd';
 import circlearrow from '../assets/NewAssets/Header/circlearrow.svg';
+import Navbar from '../components/Navbar'
 
 import {useState} from 'react';
 
@@ -28,9 +29,12 @@ const Header = () => {
           alignItems: 'center',
           gap: '10px',
           lineHeight: '40px', // Matches the height of the input for vertical centering
+
+
         }}>
+
         <span
-          style={{color: 'white', fontFamily: 'sans-serif', fontSize: '16px'}}>
+          style={{color: 'white', fontFamily: 'sans-serif', fontSize: '16px' ,alignSelf: 'flex-end'}}>
           Search?
         </span>
 
@@ -80,15 +84,16 @@ const Header = () => {
               alignItems: 'center',
               width: '190px',
               justifyContent: 'center',
+
             }}>
-            {' '}
-            {inputText}{' '}
+
+            {inputText}
           </div>
         </div>
       </Row>
 
-      <Row style={{backgroundColor: 'white', height: '126px', width: '100%'}}>
-        NavBAr
+      <Row style={{backgroundColor: 'white', height: '126px', width: '100%',padding:'0px 15px'}}>
+       <Navbar/>
       </Row>
     </Row>
   );
