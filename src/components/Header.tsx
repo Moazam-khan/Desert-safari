@@ -92,7 +92,7 @@ const Header = () => {
         </div>
       </Row>
 
-      <Row style={{backgroundColor: 'white', height: '126px', width: '100%',padding:'0px 15px'}}>
+      <Row style={{backgroundColor: 'white', height: '126px', width: '100%',padding:'0px'}}>
        <Navbar/>
       </Row>
     </Row>
