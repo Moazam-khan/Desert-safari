@@ -14,11 +14,10 @@ const AppLayout = ({children}: Props) => {
   return (
     <Layout
       style={{
-
+        backgroundColor: 'transparent',
         maxWidth: '1920px',
         margin: 'auto',
-        backgroundColor:'#b81010'
-
+        background: '#252527',
       }}>
       <Header />
       <Content style={{padding: 15}}>{children}</Content>

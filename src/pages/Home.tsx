@@ -1,11 +1,14 @@
 
-const Home = () => {
+
+// Home.tsx
+import React from 'react';
 
 
+
+
+const Home: React.FC = () => {
   return (
-    <div>
-    <h1 style ={{color:'green'}}>Home</h1>
-    </div>
+<h1>Home PAge</h1>
   );
 };
 

@@ -30,3 +30,52 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Add this to your CSS file or in a <style> block */
+
+.navbar-item {
+  position: relative;
+  padding-bottom: 5px; /* Add padding to make room for the underline */
+  display: inline-block;
+  overflow: hidden; /* Ensure the underlines don't overflow */
+  cursor: pointer; /* Change cursor to pointer on hover */
+
+}
+.navbar-icon{
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.navbar-item::before,
+.navbar-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px; /* Thinner underline */
+  transition: width 0.4s ease; /* Transition for the thin line */
+  z-index: 1; /* Ensure the thinner line is above the thicker line */
+}
+
+.navbar-item::before {
+  background-color: red; /* Color for the fast-moving line */
+}
+
+.navbar-item::after {
+  width: 0;
+  height: 4px; /* Thicker underline */
+  background-color: rgb(255, 0, 0); /* Color for the slow-moving line */
+  transition: width 0.7s ease; /* Transition for the thick line */
+  z-index: 0; /* Ensure the thicker line is below the thinner line */
+}
+
+.navbar-item:hover::before {
+  width: 100%; /* Full width on hover */
+}
+
+.navbar-item:hover::after {
+  width: 90%; /* Full width on hover, but slower */
+}
+
+.navbar-item:hover {
+  color: red;
+}

@@ -1,15 +1,21 @@
 import {Input, Row} from 'antd';
 import circlearrow from '../assets/NewAssets/Header/circlearrow.svg';
+import Navbar from '../components/Navbar'
 
 import {useState} from 'react';
 
 const Header = () => {
   const [isIconMoved, setIsIconMoved] = useState(false);
-  const [InputText, setInputText] = useState('');
+  const [inputText, setInputText] = useState('Search');
 
   const handleMouseEnter = () => {
-    setIsIconMoved((prev) => !prev); // Toggle the position
-    setInputText((prev) => (prev == 'Search' ? 'Search' : 'Search Now'));
+    setIsIconMoved(true); // Move the icon to the right
+    setInputText('Search Now');
+  };
+
+  const handleMouseLeave = () => {
+    setIsIconMoved(false); // Move the icon back to the left
+    setInputText('Search');
   };
   return (
     <Row>
@@ -23,9 +29,12 @@ const Header = () => {
           alignItems: 'center',
           gap: '10px',
           lineHeight: '40px', // Matches the height of the input for vertical centering
+
+
         }}>
+
         <span
-          style={{color: 'white', fontFamily: 'sans-serif', fontSize: '16px'}}>
+          style={{color: 'white', fontFamily: 'sans-serif', fontSize: '16px' ,alignSelf: 'flex-end'}}>
           Search?
         </span>
 
@@ -51,7 +60,6 @@ const Header = () => {
             style={{
               position: 'absolute',
               left: isIconMoved ? 'calc(100% - 30px)' : '0px', // Move to the right side of the input field on hover
-
               top: '51%',
               transform: 'translateY(-50%)',
               height: '90%', // Adjust height proportionally
@@ -60,8 +68,9 @@ const Header = () => {
             }}
             onMouseEnter={handleMouseEnter}
           />
-          <input
-            placeholder={InputText} // Set the placeholder text dynamically
+          <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             style={{
               backgroundColor: '#3C3C3C',
               color: 'white',
@@ -73,13 +82,18 @@ const Header = () => {
               height: '30px', // Set the height for vertical centering
               display: 'flex',
               alignItems: 'center',
-            }}
-          />
+              width: '190px',
+              justifyContent: 'center',
+
+            }}>
+
+            {inputText}
+          </div>
         </div>
       </Row>
 
-      <Row style={{backgroundColor: 'white', height: '126px', width: '100%'}}>
-        NavBAr
+      <Row style={{backgroundColor: 'white', height: '126px', width: '100%',padding:'0px'}}>
+       <Navbar/>
       </Row>
     </Row>
   );
