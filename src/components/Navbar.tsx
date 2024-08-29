@@ -8,13 +8,13 @@ import index from '../styles/index.css'
 
 const submenu1 = (
   <Menu    >
-    <Row style={{width:'700px',height:'160px',}} gutter={10}>
-      <Col   span={12}>
+    <Row style={{width:'700px',height:'160px',}} >
+      <Col   >
         <Menu.Item key="1">Left Item 1</Menu.Item>
         <Menu.Item key="2">Left Item 2</Menu.Item>
         <Menu.Item key="3">Left Item 3</Menu.Item>
       </Col>
-      <Col span={12}>
+      <Col >
         <Menu.Item key="1">Left Item 1</Menu.Item>
         <Menu.Item key="2">Left Item 2</Menu.Item>
         <Menu.Item key="3">Left Item 3</Menu.Item>
@@ -26,13 +26,13 @@ const submenu1 = (
 
 const submenu2 = (
   <Menu>
-    <Row gutter={24}>
-      <Col span={12}>
+    <Row >
+      <Col >
         <Menu.Item key="1">Left Item 1</Menu.Item>
         <Menu.Item key="2">Left Item 2</Menu.Item>
         <Menu.Item key="3">Left Item 3</Menu.Item>
       </Col>
-      <Col span={12}>
+      <Col >
         <Menu.Item key="1">Left Item 1</Menu.Item>
         <Menu.Item key="2">Left Item 2</Menu.Item>
         <Menu.Item key="3">Left Item 3</Menu.Item>

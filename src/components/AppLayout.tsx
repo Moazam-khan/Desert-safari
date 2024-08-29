@@ -2,6 +2,7 @@ import {useBreakpoint} from '@/hooks';
 import {Layout} from 'antd';
 import React from 'react';
 import {Header} from '.';
+import {Footer} from '.';
 
 const {Content} = Layout;
 
@@ -14,14 +15,14 @@ const AppLayout = ({children}: Props) => {
   return (
     <Layout
       style={{
-        backgroundColor: 'transparent',
+        backgroundColor: 'white',
         maxWidth: '1920px',
         margin: 'auto',
-        background: '#252527',
+        background: 'white',
       }}>
       <Header />
       <Content style={{padding: 15}}>{children}</Content>
-      {/* <Footer /> */}
+       <Footer />
     </Layout>
   );
 };
