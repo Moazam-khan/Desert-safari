@@ -1,170 +1,311 @@
-import blend from '@/assets/social-blend.png';
-import discord from '@/assets/social-discord.png';
-import twitter from '@/assets/social-twitter.png';
-import {useBreakpoint} from '@/hooks';
-import {colors, fontFamily} from '@/utils';
-import {Col, Flex, Row} from 'antd';
-import Text from './Text';
+import {RightOutlined} from '@ant-design/icons';
+import {Col, Divider, Row} from 'antd';
+import Creditcard from '../assets/NewAssets/Footer/CREDITCARD.png';
+import Facebook from '../assets/NewAssets/Footer/facebook.png';
+import Whatsapp from '../assets/NewAssets/Footer/whatsapp.png';
+import index from '../styles/index.css';
 
-type Props = {};
+const Footer = () => {
+  const styles = {
+    footer: {padding: '0px', fontFamily: 'Serif-Areon', maxWidth: '1440px'},
+    heading: {color: '#de3030', fontFamily: 'Serif-Areon', fontSize: '20px'},
+    list: {
+      listStyleType: 'none',
+      padding: 0,
+      fontFamily: 'Serif-Areon',
+      fontSize: '14px',
+    },
+    icon: {color: '#de3030', fontFamily: 'Serif-Areon'},
 
-const footerMenus = [
-  {
-    title: {title: 'Products', link: '/products'},
-    Items: [
-      {
-        title: 'NFTs',
-        link: '/nfts',
-      },
-      {
-        title: 'Marketplace',
-        link: '/marketplace',
-      },
-      {
-        title: 'Governance',
-        link: '/governance',
-      },
-    ],
-  },
-  {
-    title: {title: 'Contact Us', link: '/contact-us'},
-    Items: [
-      {
-        title: 'NFTs',
-        link: '/nfts',
-      },
-      {
-        title: 'Marketplace',
-        link: '/marketplace',
-      },
-      {
-        title: 'Governance',
-        link: '/governance',
-      },
-    ],
-  },
-  {
-    title: {title: 'About Us', link: '/about-us'},
-    Items: [
-      {
-        title: 'NFTs',
-        link: '/nfts',
-      },
-      {
-        title: 'Marketplace',
-        link: '/marketplace',
-      },
-      {
-        title: 'Governance',
-        link: '/governance',
-      },
-    ],
-  },
-];
+    divider: {margin: '10px 0px', borderColor: '#f6b3b3'},
+  };
 
-const Footer = (props: Props) => {
-  const {sm, md} = useBreakpoint();
+  const styles1 = {};
+
   return (
-    <Row
-      gutter={[28, 56]}
-      style={{
-        margin: '36px 0',
-      }}>
-      <Col xs={24} md={8} lg={6}>
-        <Text
-          ff="nippo"
-          color="white"
-          fw={600}
-          fs={24}
-          style={{
-            fontStyle: 'italic',
-          }}>
-          Baboons
-        </Text>
-        <Text
-          style={{
-            fontFamily: fontFamily.darkerGrotesque,
+    <footer style={styles.footer}>
+      <Row
+        style={{
+          backgroundColor: '#f0f2f5',
+        
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+        <Col style={{display: 'flex', flexWrap: 'wrap'}}>
 
-            fontSize: 18,
-            fontWeight: 700,
-            display: 'block',
-            color: colors.white50,
-            lineHeight: '18px',
-            marginTop: 10,
-          }}>
-          Mint, Showcase, and Own Your Unique Creations in the World of NFT.
-        </Text>
-        <Flex
-          gap={20}
-          style={{
-            marginTop: 20,
-          }}>
-          <a href="#" target="_blank" rel="noreferrer">
-            <img src={blend} height={24} />
-          </a>
-          {/* <img src={telegram} height={24} /> */}
-          <a href="#" target="_blank" rel="noreferrer">
-            <img src={twitter} height={24} />
-          </a>
-          <a href="#" target="_blank" rel="noreferrer">
-            <img src={discord} height={24} />
-          </a>
-        </Flex>
-      </Col>
-      <Col xs={24} md={16} lg={18}>
-        <Row gutter={[12, 36]}>
-          {footerMenus.map((subMenu, index) => (
-            <Col
+        <Col style={{ padding: '0 10px' }}>
+            <h3 style={styles.heading}>UAE Activities</h3>
+            <Divider style={styles.divider} />
+            <ul style={styles.list}>
+              <li>
+                <RightOutlined style={styles.icon} /> Desert Safari Dubai
+                Packages
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Sightseeing Tours
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Cruise Dinner
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Combo Tours
+              </li>
+            </ul>
+          </Col>
+          <Col style={{ padding: '0 10px' }}>
+            <h3 style={styles.heading}>Top Selling Tours</h3>
+            <Divider style={styles.divider} />
+            <ul style={styles.list}>
+              <li>
+                <RightOutlined style={styles.icon} /> Desert Safari by Bus{' '}
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Evening Desert Safari
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Red Dune Bashing Desert
+                Safari
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Desert Safari (Gold){' '}
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Silver Desert Safari in
+                Dubai
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Desert Safari with Quad
+                Bike
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Morning Desert Safari
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Hummer Desert Safari
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Bullet Point 9
+              </li>
+            </ul>
+          </Col>
+          <Col style={{ padding: '0 10px' }}>
+            <h3 style={styles.heading}>Top Selling Tours</h3>
+            <Divider style={styles.divider} />
+            <ul style={styles.list}>
+              <li>
+                <RightOutlined style={styles.icon} /> Dubai City Tour
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Abu Dhabi City Tour
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Hatta Mountain Safari
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Fujairah City Tour
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Al Ain City Tour
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Oman Musandam Tour
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Marina Cruise Dinner
+                <span className="blink"> Most Popular</span>
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Dhow Cruise Dinner
+              </li>
+            </ul>
+          </Col>
+          <Col style={{ padding: '0 10px' }}>
+            <h3 style={styles.heading}>Top Selling Tours</h3>
+            <Divider style={styles.divider} />
+            <ul style={styles.list}>
+              <li>
+                <RightOutlined style={styles.icon} /> Abu Dhabi And Ferrari
+                World
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Dubai City Tour + Desert
+                Safari
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Dubai City Tour + Dhow
+                Cruise Dinner
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Dubai City Tour + Marina
+                Cruise Dinner
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Abu Dhabi + Marina Cruise
+                Dinner
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Abu Dhabi + Dhow Cruise
+                Dinner
+              </li>
+              <li>
+                <RightOutlined style={styles.icon} /> Dubai City Tour + Desert
+                Safari + Dhow Cruise Dinner + Abu Dhabi City Tour
+              </li>
+            </ul>
+          </Col>
+        </Col>
+
+      </Row>
+
+      <Row
+        style={{
+          padding: '30px 20px 20px ',
+          gap: '20px',
+          backgroundColor: 'black',
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+        <Col style={{flex: '1', maxWidth: '32%'}}>
+          <h1
+            style={{
+              fontFamily: 'sans-serif',
+              fontSize: '22px',
+              padding: '0px 0px 10px',
+              margin: '0px 0px 10px',
+              color: 'white',
+            }}>
+            About Us
+          </h1>
+          <Divider
+            style={{
+              margin: '-12px 0px',
+              borderColor: 'white',
+              paddingLeft: '12px',
+              paddingRight: '12px',
+            }}
+          />
+          <p
+            style={{
+              color: 'white',
+              lineHeight: '1.6',
+              textAlign: 'justify',
+              fontSize: '16px',
+            }}>
+            Desert Safari UAE – offer the Dubai City Tour, Sightseeing Tours,
+            Dubai Combo Tour, Dinner Cruise, and all inclusive packages for
+            different kinds of desert safari in Dubai with Pick & Drop, BBQ, and
+            Camel Ride. Desertsafariuae.ae is the most distinguished Dubai City
+            Tour and Desert Safari Company in Dubai, UAE. 100% Customer
+            Satisfaction, 5-Star Rating Desert Safari Company in Dubai.
+          </p>
+        </Col>
+
+        {/* Second Column */}
+        <Col>
+          <h1
+            style={{
+              fontFamily: 'sans-serif',
+              fontSize: '22px',
+              padding: '0px 0px 10px',
+              margin: '0px 0px 10px',
+              color: 'white',
+            }}>
+            Desert Safari Dubai
+          </h1>
+          <Divider style={{margin: '8px 0px', borderColor: 'white'}} />
+          <div>
+            <iframe
+              width="100%"
+              height="215"
+              src="https://www.youtube.com/embed/_4YnHwUoANI"
+              title="Desert Safari Dubai 2019"
+              frameBorder="0"
+              style={{border: '0'}}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+        </Col>
+
+        {/* Third Column */}
+        <Col>
+          <div style={{marginBottom: '10px'}}>
+            <h1
               style={{
+                fontFamily: 'sans-serif',
+                fontSize: '22px',
+                color: 'white',
+                margin: '0 0 10px', // Ensure consistent margin
+              }}>
+              Contact Us
+            </h1>
+            <Divider style={{margin: '0', borderColor: 'white'}} />
+            <div
+              style={{
+                marginBottom: '0px',
                 display: 'flex',
-                justifyContent: md ? 'center' : sm ? 'left' : 'center',
-                textAlign: sm ? 'left' : 'center',
-              }}
-              key={subMenu.title.title + index}
-              xs={24}
-              sm={8}>
-              <div>
-                <Text
-                  style={{
-                    fontFamily: fontFamily.darkerGrotesque,
-                    fontSize: 18,
-                    fontWeight: 800,
-                    cursor: 'pointer',
-                  }}>
-                  {subMenu.title.title}
-                </Text>
-                {subMenu.Items.map((item) => (
-                  <Text
-                    key={item.title + subMenu.title.title + index}
-                    style={{
-                      fontFamily: fontFamily.darkerGrotesque,
-                      fontSize: 18,
-                      fontWeight: 600,
-                      display: 'block',
-                      color: colors.white50,
-                      cursor: 'pointer',
-                    }}>
-                    {item.title}
-                  </Text>
-                ))}
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Col>
-      <Col span={24}>
-        <Text
+                flexDirection: 'column',
+              }}>
+              <text
+                style={{
+                  color: 'white',
+                  margin: '10px 0',
+                  fontFamily: 'sans-serif',
+                }}>
+                Email: <span className="red-link">info@desertsafariuae.ae</span>
+              </text>
+              <text style={{color: 'white', fontFamily: 'sans-serif'}}>
+                Phone:<span className="red-link">00971557355443</span>
+              </text>
+            </div>
+          </div>
+          <div style={{display: 'flex', gap: '10px', marginBottom: '10px'}}>
+            {/* Replace these placeholders with your images */}
+            <img
+              src={Facebook}
+              alt="Icon 1"
+              style={{width: '10%', height: '15%'}}
+            />
+            <img
+              src={Whatsapp}
+              alt="Icon 2"
+              style={{width: '10%', height: '15%'}}
+            />
+            <img
+              src={Creditcard}
+              alt="Icon 3"
+              style={{width: '25%', height: '15%'}}
+            />
+          </div>
+          <div style={{height: '200px'}}>
+            {/* Adjust height as needed */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10401.283340470042!2d72.0343!3d34.1460!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMzTEwDJc0MDM!5e0!3m2!1sen!2sus!4v1630587086507"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              style={{border: '0'}}
+              aria-hidden="false"></iframe>
+          </div>
+        </Col>
+      </Row>
+
+      <Row style={{backgroundColor: 'black', width: '100%', flex: 'auto'}}>
+        {' '}
+        <text
           style={{
-            fontFamily: fontFamily.darkerGrotesque,
-            fontWeight: 600,
-            display: 'block',
-            color: colors.white50,
-            marginTop: 36,
+            color: 'white ',
+            textAlign: 'center',
+            fontFamily: 'sans-serif',
           }}>
-          &#169; 2024 Baboons, all rights reserved
-        </Text>
-      </Col>
-    </Row>
+          Desert Safari UAE Copyright 2020 © All rights reserved.
+        </text>
+      </Row>
+    </footer>
   );
 };
 

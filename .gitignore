@@ -25,3 +25,6 @@ dist-ssr
 
 #environments
 .env
+
+git_rsa
+git_rsa.pub

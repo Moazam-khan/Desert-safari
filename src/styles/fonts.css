@@ -31,3 +31,17 @@
   font-weight: 500;
 }
 
+
+@font-face {
+  font-family: 'Serif-Areon';
+  src: url('../assets/fonts/Serif-Areon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('../assets/fonts/Muli-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Muli-Regular.woff') format('woff'),
+       url('../assets/fonts/Muli-Regular.ttf') format('truetype');
+}
