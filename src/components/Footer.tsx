@@ -5,10 +5,9 @@ import Facebook from '../assets/NewAssets/Footer/facebook.png';
 import Whatsapp from '../assets/NewAssets/Footer/whatsapp.png';
 import index from '../styles/index.css';
 
-
 const Footer = () => {
   const styles = {
-    footer: {padding: '20px 50px', fontFamily: 'Serif-Areon'},
+    footer: {padding: '0px', fontFamily: 'Serif-Areon', maxWidth: '1440px'},
     heading: {color: '#de3030', fontFamily: 'Serif-Areon', fontSize: '20px'},
     list: {
       listStyleType: 'none',
@@ -25,14 +24,16 @@ const Footer = () => {
 
   return (
     <footer style={styles.footer}>
+      <Row
+        style={{
+          backgroundColor: '#f0f2f5',
+        
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+        <Col style={{display: 'flex', flexWrap: 'wrap'}}>
 
-
-      <Row style={{ }}>
-
-
-
-        <Row style={{backgroundColor: '#f0f2f5'}} gutter={16}>
-          <Col span={6}>
+        <Col style={{ padding: '0 10px' }}>
             <h3 style={styles.heading}>UAE Activities</h3>
             <Divider style={styles.divider} />
             <ul style={styles.list}>
@@ -51,13 +52,13 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col span={6}>
+          <Col style={{ padding: '0 10px' }}>
             <h3 style={styles.heading}>Top Selling Tours</h3>
             <Divider style={styles.divider} />
             <ul style={styles.list}>
               <li>
                 <RightOutlined style={styles.icon} /> Desert Safari by Bus{' '}
-                <span  className="blink"> Most Popular</span>
+                <span className="blink"> Most Popular</span>
               </li>
               <li>
                 <RightOutlined style={styles.icon} /> Evening Desert Safari
@@ -68,7 +69,8 @@ const Footer = () => {
                 Safari
               </li>
               <li>
-                <RightOutlined style={styles.icon} /> Desert Safari (Gold)  <span className="blink"> Most Popular</span>
+                <RightOutlined style={styles.icon} /> Desert Safari (Gold){' '}
+                <span className="blink"> Most Popular</span>
               </li>
               <li>
                 <RightOutlined style={styles.icon} /> Silver Desert Safari in
@@ -90,7 +92,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col span={6}>
+          <Col style={{ padding: '0 10px' }}>
             <h3 style={styles.heading}>Top Selling Tours</h3>
             <Divider style={styles.divider} />
             <ul style={styles.list}>
@@ -123,7 +125,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col span={6}>
+          <Col style={{ padding: '0 10px' }}>
             <h3 style={styles.heading}>Top Selling Tours</h3>
             <Divider style={styles.divider} />
             <ul style={styles.list}>
@@ -157,127 +159,151 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Col>
 
-        <Row
-          gutter={24}
-          style={{padding: '30px 0px 20px', backgroundColor: 'black'}}>
-          {/* First Column */}
-          <Col span={8}>
+      </Row>
+
+      <Row
+        style={{
+          padding: '30px 20px 20px ',
+          gap: '20px',
+          backgroundColor: 'black',
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+        <Col style={{flex: '1', maxWidth: '32%'}}>
+          <h1
+            style={{
+              fontFamily: 'sans-serif',
+              fontSize: '22px',
+              padding: '0px 0px 10px',
+              margin: '0px 0px 10px',
+              color: 'white',
+            }}>
+            About Us
+          </h1>
+          <Divider
+            style={{
+              margin: '-12px 0px',
+              borderColor: 'white',
+              paddingLeft: '12px',
+              paddingRight: '12px',
+            }}
+          />
+          <p
+            style={{
+              color: 'white',
+              lineHeight: '1.6',
+              textAlign: 'justify',
+              fontSize: '16px',
+            }}>
+            Desert Safari UAE – offer the Dubai City Tour, Sightseeing Tours,
+            Dubai Combo Tour, Dinner Cruise, and all inclusive packages for
+            different kinds of desert safari in Dubai with Pick & Drop, BBQ, and
+            Camel Ride. Desertsafariuae.ae is the most distinguished Dubai City
+            Tour and Desert Safari Company in Dubai, UAE. 100% Customer
+            Satisfaction, 5-Star Rating Desert Safari Company in Dubai.
+          </p>
+        </Col>
+
+        {/* Second Column */}
+        <Col>
+          <h1
+            style={{
+              fontFamily: 'sans-serif',
+              fontSize: '22px',
+              padding: '0px 0px 10px',
+              margin: '0px 0px 10px',
+              color: 'white',
+            }}>
+            Desert Safari Dubai
+          </h1>
+          <Divider style={{margin: '8px 0px', borderColor: 'white'}} />
+          <div>
+            <iframe
+              width="100%"
+              height="215"
+              src="https://www.youtube.com/embed/_4YnHwUoANI"
+              title="Desert Safari Dubai 2019"
+              frameBorder="0"
+              style={{border: '0'}}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+        </Col>
+
+        {/* Third Column */}
+        <Col>
+          <div style={{marginBottom: '10px'}}>
             <h1
               style={{
                 fontFamily: 'sans-serif',
                 fontSize: '22px',
-                padding: '0px 0px 10px',
-                margin: '0px 0px 10px',
                 color: 'white',
+                margin: '0 0 10px', // Ensure consistent margin
               }}>
-              About Us
+              Contact Us
             </h1>
-            <Divider style={{margin: '-12px 0px', borderColor: 'white'}} />
-            <p
+            <Divider style={{margin: '0', borderColor: 'white'}} />
+            <div
               style={{
-                color: 'white',
-                fontFamily: '',
-                lineHeight: '1.6',
-                textAlign: 'justify',
-                fontSize: '16px',
+                marginBottom: '0px',
+                display: 'flex',
+                flexDirection: 'column',
               }}>
-              Desert Safari UAE – offer the Dubai City Tour, Sightseeing Tours,
-              Dubai Combo Tour, Dinner Cruise, and all inclusive packages for
-              different kind of desert safari in Dubai with Pick & Drop, BBQ and
-              Camel Ride. Desertsafariuae.ae is the most distinguished Dubai
-              City Tour and Desert Safari Company in Dubai, UAE. 100% Customer
-              Satisfaction, 5-Star Rating Desert Safari Company in Dubai.
-            </p>
-          </Col>
-
-          {/* Second Column */}
-          <Col span={8}>
-            <h1
-              style={{
-                fontFamily: 'sans-serif',
-                fontSize: '22px',
-                padding: '0px 0px 10px',
-                margin: '0px 0px 10px',
-                color: 'white',
-              }}>
-              Desert Safari Dubai
-            </h1>
-            <Divider style={{margin: '8px 0px', borderColor: 'white'}} />
-            <div>
-              <iframe
-                width="100%"
-                height="215"
-                src="https://www.youtube.com/embed/_4YnHwUoANI"
-                title="Desert Safari Dubai 2019"
-                frameBorder="0"
-                style={{border: '0'}}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            </div>
-          </Col>
-
-          {/* Third Column */}
-          <Col span={8}>
-            <div style={{marginBottom: '10px'}}>
-              <h1
+              <text
                 style={{
-                  fontFamily: 'sans-serif',
-                  fontSize: '22px',
                   color: 'white',
-                  margin: '0 0 10px', // Ensure consistent margin
+                  margin: '10px 0',
+                  fontFamily: 'sans-serif',
                 }}>
-                Contact Us
-              </h1>
-              <Divider style={{margin: '0', borderColor: 'white'}} />
-              <div
-                style={{
-                  marginBottom: '0px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                }}>
-                <text style={{color: 'white', margin: '10px 0',fontFamily:'sans-serif'}}>
-                  Email: <span className="red-link">info@desertsafariuae.ae</span>
-                </text>
-                <text style={{color: 'white',fontFamily:'sans-serif'}}>
-                  Phone:<span className="red-link" >00971557355443</span>
-                </text>
-              </div>
+                Email: <span className="red-link">info@desertsafariuae.ae</span>
+              </text>
+              <text style={{color: 'white', fontFamily: 'sans-serif'}}>
+                Phone:<span className="red-link">00971557355443</span>
+              </text>
             </div>
-            <div style={{display: 'flex', gap: '10px', marginBottom: '10px'}}>
-              {/* Replace these placeholders with your images */}
-              <img
-                src={Facebook}
-                alt="Icon 1"
-                style={{width: '10%', height: '15%'}}
-              />
-              <img
-                src={Whatsapp}
-                alt="Icon 2"
-                style={{width: '10%', height: '15%'}}
-              />
-              <img
-                src={Creditcard}
-                alt="Icon 3"
-                style={{width: '25%', height: '15%'}}
-              />
-            </div>
-            <div style={{height: '200px'}}>
-              {/* Adjust height as needed */}
-              <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10401.283340470042!2d72.0343!3d34.1460!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMzTEwDJc0MDM!5e0!3m2!1sen!2sus!4v1630587086507"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                style={{border: '0'}}
-                aria-hidden="false"></iframe>
-            </div>
-          </Col>
-        </Row>
+          </div>
+          <div style={{display: 'flex', gap: '10px', marginBottom: '10px'}}>
+            {/* Replace these placeholders with your images */}
+            <img
+              src={Facebook}
+              alt="Icon 1"
+              style={{width: '10%', height: '15%'}}
+            />
+            <img
+              src={Whatsapp}
+              alt="Icon 2"
+              style={{width: '10%', height: '15%'}}
+            />
+            <img
+              src={Creditcard}
+              alt="Icon 3"
+              style={{width: '25%', height: '15%'}}
+            />
+          </div>
+          <div style={{height: '200px'}}>
+            {/* Adjust height as needed */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10401.283340470042!2d72.0343!3d34.1460!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMzTEwDJc0MDM!5e0!3m2!1sen!2sus!4v1630587086507"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              style={{border: '0'}}
+              aria-hidden="false"></iframe>
+          </div>
+        </Col>
+      </Row>
 
-        <Row style={{backgroundColor:'black',width:'100%',flex:'auto'}}> <text style={{color:'white ', textAlign:'center',fontFamily:'sans-serif'}}>Desert Safari UAE Copyright 2020 © All rights reserved.</text></Row>
-
-
+      <Row style={{backgroundColor: 'black', width: '100%', flex: 'auto'}}>
+        {' '}
+        <text
+          style={{
+            color: 'white ',
+            textAlign: 'center',
+            fontFamily: 'sans-serif',
+          }}>
+          Desert Safari UAE Copyright 2020 © All rights reserved.
+        </text>
       </Row>
     </footer>
   );

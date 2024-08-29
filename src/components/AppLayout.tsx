@@ -16,13 +16,13 @@ const AppLayout = ({children}: Props) => {
     <Layout
       style={{
         backgroundColor: 'white',
-        maxWidth: '1220px',
+        maxWidth: '1440px',
         width:'100%',
         margin: 'auto',
         background: 'white',
       }}>
       <Header />
-      <Content style={{padding: 15}}>{children}</Content>
+      <Content style={{}}>{children}</Content>
        <Footer />
     </Layout>
   );
