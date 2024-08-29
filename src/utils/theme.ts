@@ -1,4 +1,4 @@
-import {ThemeConfig} from 'antd';
+import { ThemeConfig } from 'antd';
 
 export const fontFamily = {
   poppins: 'Poppins',
@@ -35,6 +35,10 @@ export const theme: ThemeConfig = {
       colorText: 'white',
     },
     Button: {},
+    Collapse: {
+      contentBg: '#f8f8f8',
+      headerBg: '#f8f8f8',
+    },
     Spin: {
       colorPrimary: colors.primary,
     },
