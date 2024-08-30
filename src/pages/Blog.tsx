@@ -37,6 +37,9 @@ const Blog = () => {
 
 
       </div>
+
+
+
       <div style={{ paddingTop: '30px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly',gap:'16px' }}>
       <Blogcardprop
         image={pic1}

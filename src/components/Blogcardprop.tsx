@@ -14,7 +14,8 @@ interface BlogCardProps {
 
 const Blogcardprop: React.FC<BlogCardProps> = ({ image, heading, parag }) => {
 
-return(<div
+return(
+<div
   style={{
     maxWidth: '263px',
     border: '1px solid #d9d9d9',
