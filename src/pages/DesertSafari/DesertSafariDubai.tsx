@@ -164,6 +164,8 @@ const DesertSafariDubai = () => {
           buttonText="Book Now"
         />
       </div>
+
+
       <div>
         <CardComp2 />
       </div>

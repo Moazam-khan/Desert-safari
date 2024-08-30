@@ -43,11 +43,12 @@
 
 /* Top Text */
 .card-top-text {
+  width: 85%;
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 15px;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: bold;
   z-index: 2;
   pointer-events: none;
@@ -134,3 +135,8 @@
 // transform: translateY(-5px);
 // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 // }
+
+.safari-list li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}

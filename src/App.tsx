@@ -9,6 +9,9 @@ import Blog from '@/pages/Blog';
 import ContactUs from '@/pages/ContactUs'; // Ensure Contact Us page is correctly exported*/}
 import '@/styles/App.css';
 import { Route, Routes } from 'react-router-dom';
+import AboutUs from './pages/AboutUs';
+import AllPackages from './pages/AllPackages';
+import DesertSafariDubai from './pages/DesertSafari/DesertSafariDubai';
 
 const App: React.FC = () => {
   return (
