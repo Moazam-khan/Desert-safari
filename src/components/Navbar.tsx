@@ -68,9 +68,9 @@ const Navbar = () => {
       {/* Six items on the right side */}
       <Col flex="auto">
         <Row
-          justify="end" // Align items to the end (right side)
-          align="middle" // Center items vertically
-          style={{ margin: '0 -20px' }} // Compensate for the margin on items
+          justify="end" //
+          align="middle" //
+          style={{ margin: '0 -20px' }} // 
         >
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif'}}
