@@ -3,6 +3,7 @@ import { Home } from '@/pages';
 import '@/styles/App.css';
 import { Route, Routes } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
+import AllPackages from './pages/AllPackages';
 import DesertSafariDubai from './pages/DesertSafari/DesertSafariDubai';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/desert-safari-dubai" element={<DesertSafariDubai />} />
+        <Route path="/all-packages" element={<AllPackages />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </AppLayout>
