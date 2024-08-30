@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Dropdown, Menu } from 'antd';
+import { Row, Col, Dropdown, Menu,Divider } from 'antd';
 import { DownOutlined } from '@ant-design/icons'; // Ant Design down arrow icon
 import DSL from '../assets/NewAssets/Header/DSL.png';
 import index from '../styles/index.css'
@@ -7,39 +7,52 @@ import index from '../styles/index.css'
 
 
 const submenu1 = (
-  <Menu    >
-    <Row style={{width:'700px',height:'160px',}} >
-      <Col   >
-        <Menu.Item key="1">Left Item 1</Menu.Item>
-        <Menu.Item key="2">Left Item 2</Menu.Item>
-        <Menu.Item key="3">Left Item 3</Menu.Item>
-      </Col>
-      <Col >
-        <Menu.Item key="1">Left Item 1</Menu.Item>
-        <Menu.Item key="2">Left Item 2</Menu.Item>
-        <Menu.Item key="3">Left Item 3</Menu.Item>
-      </Col>
+  <Menu style={{ width: '100%', backgroundColor: 'white', padding: '0px' }}>
+  <div style={{ width: '700px', height: '160px', backgroundColor: 'white', display: 'flex' }}>
+    <div style={{ width: '50%', height: '100%', padding: '10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      <div style={{ color: 'black' }}>Evening Desert Safari</div>
+      <Divider style={{ margin: 0, color:'black'}} />
+      <div style={{ color: 'black' }}>Morning Desert Safari</div>
+      <Divider style={{ margin: 0 }} />
+      <div style={{ color: 'black' }}>Overnight Desert Safari</div>
+      <Divider style={{ margin: 0 }} />
+      <div style={{ color: 'black' }}>Private Desert Safari</div>
+    </div>
+    <div style={{ width: '50%', padding: '10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      <div style={{ color: 'black' }}>Vip Desert Safari</div>
+      <Divider style={{ margin: 0 }} />
+      <div style={{ color: 'black' }}>Luxury Desert Safari</div>
+      <Divider style={{ margin: 0 }} />
+      <div style={{ color: 'black' }}>Desert Safari with Quad Bike</div>
+      <Divider style={{ margin: 0 }} />
 
-    </Row>
-  </Menu>
+    </div>
+  </div>
+</Menu>
+
+
 );
 
 const submenu2 = (
-  <Menu>
-    <Row >
-      <Col >
-        <Menu.Item key="1">Left Item 1</Menu.Item>
-        <Menu.Item key="2">Left Item 2</Menu.Item>
-        <Menu.Item key="3">Left Item 3</Menu.Item>
-      </Col>
-      <Col >
-        <Menu.Item key="1">Left Item 1</Menu.Item>
-        <Menu.Item key="2">Left Item 2</Menu.Item>
-        <Menu.Item key="3">Left Item 3</Menu.Item>
-      </Col>
+  <Menu style={{ width: '100%', backgroundColor: 'white', padding: '0px' }}>
+  <div style={{ width: '700px', height: '100px', backgroundColor: 'white', display: 'flex' }}>
+    <div style={{ width: '50%', height: '100%', padding: '10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      <div style={{ color: 'black' }}>Dubai Sightseeing tours </div>
+      <Divider style={{ margin: 0, color:'black'}} />
+      <div style={{ color: 'black' }}>Abu Dhabi Tour Packages</div>
+      <Divider style={{ margin: 0, color:'black'}} />
+      <div style={{ color: 'black' }}>Combo Tours </div>
 
-    </Row>
-  </Menu>
+    </div>
+    <div style={{ width: '50%',  padding: '10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      <div style={{ color: 'black' }}>Dubai City Tour PAckages </div>
+      <Divider style={{ margin: 0, color:'black'}} />
+      <div style={{ color: 'black' }}>Cruise Dinner</div>
+       <Divider style={{ margin: 0, color:'black'}} />
+      <div style={{ color: 'black' }}>Quad biking Dubai</div>
+    </div>
+  </div>
+</Menu>
 );
 
 const Navbar = () => {

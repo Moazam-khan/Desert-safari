@@ -27,7 +27,7 @@ const Footer = () => {
       <Row
         style={{
           backgroundColor: '#f0f2f5',
-        
+
           display: 'flex',
           justifyContent: 'center',
         }}>
@@ -293,18 +293,16 @@ const Footer = () => {
           </div>
         </Col>
       </Row>
-
-      <Row style={{backgroundColor: 'black', width: '100%', flex: 'auto'}}>
-        {' '}
-        <text
-          style={{
-            color: 'white ',
-            textAlign: 'center',
-            fontFamily: 'sans-serif',
-          }}>
-          Desert Safari UAE Copyright 2020 © All rights reserved.
-        </text>
-      </Row>
+      <Row style={{backgroundColor: 'gray', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px 0'}}>
+  <text
+    style={{
+      color: 'white',
+      textAlign: 'center',
+      fontFamily: 'sans-serif',
+    }}>
+    Desert Safari UAE Copyright 2020 © All rights reserved.
+  </text>
+</Row>
     </footer>
   );
 };
