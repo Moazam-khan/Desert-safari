@@ -9,9 +9,8 @@ import Blog from '@/pages/Blog';
 import ContactUs from '@/pages/ContactUs'; // Ensure Contact Us page is correctly exported*/}
 import '@/styles/App.css';
 import { Route, Routes } from 'react-router-dom';
-import AboutUs from './pages/AboutUs';
 import AllPackages from './pages/AllPackages';
-import DesertSafariDubai from './pages/DesertSafari/DesertSafariDubai';
+
 
 const App: React.FC = () => {
   return (
@@ -36,7 +35,9 @@ const App: React.FC = () => {
         <Route path="/all-packages/combo-tours" element={<ComboTours />} />
         <Route path="/all-packages/dubai-city-tour-packages" element={<DubaiCityTourPackages />} />
         <Route path="/all-packages/cruise-dinner" element={<CruiseDinner />} />
-        <Route path="/all-packages/quad-biking-dubai" element={<QuadBikingDubai />} />
+        <Route path="/all-packages/quad-biking-dubai" element={<QuadBikingDubai />} />*/}
+
+          <Route path="/pages/AllPackages" element={<AllPackages />} />
 
         {/* Blog and Contact Us pages */}
          <Route path="/ContactUs" element={<ContactUs />} />

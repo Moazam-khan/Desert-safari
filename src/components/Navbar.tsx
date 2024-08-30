@@ -93,7 +93,7 @@ const Navbar = () => {
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
           >
-            All Packages
+            <Link to="/pages/AllPackages">All Packages</Link>
             <Dropdown overlay={submenu2} trigger={['hover']}>
               <DownOutlined style={{ color: 'red', marginLeft: '8px' }} />
             </Dropdown>
