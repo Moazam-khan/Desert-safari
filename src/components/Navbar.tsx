@@ -73,19 +73,19 @@ const Navbar = () => {
           style={{ margin: '0 -20px' }} // Compensate for the margin on items
         >
           <Col className="navbar-item"
-            style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
+            style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif'}}
           >
-            <Link to="/">Home</Link>
+            <Link style={{color:'red'}} to="/">Home</Link>
           </Col>
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
           >
-            <Link to="/about-us">About Us</Link>
+            <Link  style={{color:'red'}} to="/about-us">About Us</Link>
           </Col>
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
           >
-            <Link to="/DubaiDesertSafari">Dubai Desert Safari</Link>
+            <Link  style={{color:'red'}} to="/DubaiDesertSafari">Dubai Desert Safari</Link>
             <Dropdown overlay={submenu1} trigger={['hover']}>
               <DownOutlined style={{ color: 'red', marginLeft: '8px' }} />
             </Dropdown>
@@ -93,7 +93,7 @@ const Navbar = () => {
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
           >
-            <Link to="/pages/AllPackages">All Packages</Link>
+            <Link  style={{color:'red'}} to="/pages/AllPackages">All Packages</Link>
             <Dropdown overlay={submenu2} trigger={['hover']}>
               <DownOutlined style={{ color: 'red', marginLeft: '8px' }} />
             </Dropdown>
@@ -101,12 +101,12 @@ const Navbar = () => {
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
           >
-            <Link to="/ContactUs">Contact</Link>
+            <Link  style={{color:'red'}} to="/ContactUs">Contact</Link>
           </Col>
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif' }}
           >
-            <Link to="/blog">Blog</Link>
+            <Link  style={{color:'red'}}  to="/blog">Blog</Link>
           </Col>
         </Row>
       </Col>
