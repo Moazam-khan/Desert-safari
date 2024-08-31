@@ -3,7 +3,7 @@ import { AppLayout } from '@/components';
 import { Home } from '@/pages';
 import AboutUs from '@/pages/AboutUs';
 import DesertSafariDubai from '@/pages/DesertSafari/DesertSafariDubai';
-import EveningDesertSafari from '@/pages/DesertSafari/EveningDesertSafari';
+
 
 import Blog from '@/pages/Blog';
 import ContactUs from '@/pages/ContactUs'; // Ensure Contact Us page is correctly exported*/}
@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Route path="/DubaiDesertSafari" element={<DesertSafariDubai />} /> {/* Desert Safari Dubai page */}
 
         {/* Sub-routes for Desert Safari */}
-       <Route path="/DubaiDesertSafari/evening-desert-safari" element={<EveningDesertSafari />} />
+     {/*   <Route path="/DubaiDesertSafari/evening-desert-safari" element={<EveningDesertSafari />} />
        {/*   <Route path="/DubaiDesertSafari/morning-desert-safari" element={<MorningDesertSafari />} />
         <Route path="/DubaiDesertSafari/overnight-desert-safari" element={<OvernightDesertSafari />} />
         <Route path="/DubaiDesertSafari/private-desert-safari" element={<PrivateDesertSafari />} />
