@@ -1,5 +1,5 @@
 import {Button, Input, Typography} from 'antd';
-import ReCAPTCHA from 'react-google-recaptcha';
+
 import header from '../assets/NewAssets/Contactus/header.jpg';
 import Facebook from '../assets/NewAssets/Footer/facebook.png';
 import Whatsapp from '../assets/NewAssets/Footer/whatsapp.png';
@@ -39,7 +39,7 @@ const ContactForm = () => {
         style={{
           maxWidth: '1440px',
           margin: '0 auto',
-          
+
           display: 'flex',
           flexDirection: 'row',
           padding:'0px 30px',
@@ -90,13 +90,7 @@ const ContactForm = () => {
             }}
           />
 
-          <div style={{marginTop: '20px', marginBottom: '20px'}}>
-            <ReCAPTCHA
-              sitekey="your-recaptcha-site-key"
-              theme="light" // or 'dark'
-              size="normal" // or 'compact'
-            />
-          </div>
+        
 
           <Button
             style={{
