@@ -65,12 +65,12 @@ const Navbar = () => {
         <img src={DSL} style={{ width: '150px', height: '105px' }} alt="" />
       </Col>
 
-      {/* Six items on the right side */}
+      {/* Six items on right side */}
       <Col flex="auto">
         <Row
-          justify="end" //
-          align="middle" //
-          style={{ margin: '0 -20px' }} // 
+          justify="end"
+          align="middle"
+          style={{ margin: '0 -20px' }} //
         >
           <Col className="navbar-item"
             style={{ margin: '0 20px', display: 'flex', alignItems: 'center', fontFamily: 'sans-serif'}}
