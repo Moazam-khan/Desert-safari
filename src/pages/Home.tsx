@@ -28,11 +28,17 @@ const DesertSafariDubai = () => {
       <div
   style={{
     width: '100%',
-    height: '600px',
+    height: '230px',
     backgroundImage: `url(${DSP1})`,
-    backgroundSize: 'contain', // Ensures the whole image fits within the div
+    backgroundSize: 'cover', // Ensures the image covers the div
     backgroundPosition: 'center', // Centers the image
     backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+    position: 'relative',
+    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+
   }}></div>
       <div style={{display: 'flex', justifyContent: 'center'}}>
 
@@ -176,7 +182,7 @@ const DesertSafariDubai = () => {
 
           backgroundSize: 'contain', // Ensures the whole image fits within the div
           backgroundPosition: 'center', // Centers the image
-        
+
         }}>  <Text
         style={{
           fontSize: '2.5em',
