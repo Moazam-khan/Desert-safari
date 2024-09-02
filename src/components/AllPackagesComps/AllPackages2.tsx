@@ -2,7 +2,7 @@
 const AllPackages2 = () => {
   return (
     <div style={{
-      width: '1170px',
+      maxWidth: '1440px',
       display: 'flex',
       flexDirection: 'column',
       margin: 'auto',
@@ -16,7 +16,7 @@ const AllPackages2 = () => {
         alignItems: 'center',
         flexDirection: 'column',
       }}>
-        <h1>Plan to Visit in Dubai and Searching the Dubai Desert Safari Packages in Dubai?</h1>
+        <h1 style={{}}>Plan to Visit in Dubai and Searching the Dubai Desert Safari Packages in Dubai?</h1>
         <p style={{
           textAlign: 'center',
           fontSize: '1.43em',

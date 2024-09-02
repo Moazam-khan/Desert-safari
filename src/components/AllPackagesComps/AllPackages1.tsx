@@ -49,15 +49,17 @@ import card6 from '../../assets/AllPackagesImages/card6.jpg';
 import card7 from '../../assets/AllPackagesImages/card7.jpg';
 import card8 from '../../assets/AllPackagesImages/card8.jpg';
 import card9 from '../../assets/AllPackagesImages/card9.jpg';
+import { useBreakpoint } from '@/hooks';
 
 
 const AllPackages1 = () => {
+  const {xs, sm, md,lg} = useBreakpoint();
   return (
     <div style={{
       display: 'flex', flexWrap: 'wrap', gap: '30px',
       padding: '30px 0px 0px',
-      width: '1200px',
-      // justifyContent: 'center',
+      maxWidth: '1440px',
+      justifyContent: lg ? 'unset' : 'center',
       alignItems: 'center',
       margin: 'auto',
     }}>

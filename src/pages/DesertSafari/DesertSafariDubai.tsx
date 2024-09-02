@@ -52,7 +52,7 @@ const DesertSafariDubai = () => {
       <div style={{
         display: 'flex', flexWrap: 'wrap', gap: '30px',
         padding: '30px 0px 0px',
-        width: '1200px',
+        maxWidth: '1440px',
         justifyContent: 'center',
         alignItems: 'center',
         margin: 'auto',

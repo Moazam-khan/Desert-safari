@@ -1,9 +1,9 @@
-import { Row, Col, Dropdown, Menu, Divider } from 'antd';
-import { DownOutlined } from '@ant-design/icons'; // Ant Design down arrow icon
+import { Row, Col, Dropdown, Menu, Divider, Grid } from 'antd';
+import { DownOutlined, HomeOutlined, SettingOutlined } from '@ant-design/icons'; // Ant Design down arrow icon
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import DSL from '../assets/NewAssets/Header/DSL.png';
 import '../styles/index.css'; // Ensure the path is correct
-
+import  useBreakpoint  from '../hooks/useBreakpoint';
 const submenu1 = (
   <Menu style={{ width: '100%', backgroundColor: 'white', padding: '0px' }}>
     <div style={{ width: '700px', height: '160px', backgroundColor: 'white', display: 'flex' }}>
@@ -50,7 +50,13 @@ const submenu2 = (
 );
 
 const Navbar = () => {
+
+  const { xs} = useBreakpoint();
+  console.log('xs',xs);
+
+
   return (
+
     <Row
       style={{
         backgroundColor: 'white',
@@ -111,7 +117,12 @@ const Navbar = () => {
         </Row>
       </Col>
     </Row>
+
+
+
   );
+
+
 };
 
 export default Navbar;

@@ -4,8 +4,12 @@ import Creditcard from '../assets/NewAssets/Footer/CREDITCARD.png';
 import Facebook from '../assets/NewAssets/Footer/facebook.png';
 import Whatsapp from '../assets/NewAssets/Footer/whatsapp.png';
 import index from '../styles/index.css';
+import useBreakpoint from '@/hooks/useBreakpoint';
 
 const Footer = () => {
+  const {xs, sm, md,lg} = useBreakpoint();
+
+
   const styles = {
     footer: {padding: '0px', fontFamily: 'Serif-Areon', maxWidth: '1440px'},
     heading: {color: '#de3030', fontFamily: 'Serif-Areon', fontSize: '20px'},
@@ -170,8 +174,9 @@ const Footer = () => {
           backgroundColor: 'black',
           display: 'flex',
           justifyContent: 'center',
+         flexDirection: lg ? 'unset':'column'
         }}>
-        <Col style={{flex: '1', maxWidth: '32%'}}>
+        <Col style={{flex: '1',}}>
           <h1
             style={{
               fontFamily: 'sans-serif',

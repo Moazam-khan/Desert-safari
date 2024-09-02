@@ -26,14 +26,14 @@ const DesertSafariDubai = () => {
         background: 'white',
       }}>
       <div
-        style={{
-          width: '100%',
-          height: '600px',
-          backgroundImage: `url(${DSP1})`, // Use the imported image variable
-          backgroundSize: 'cover', // Adjusts the size of the background image
-          backgroundPosition: 'left', // Centers the background image
-          backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-        }}></div>
+  style={{
+    width: '100%',
+    height: '600px',
+    backgroundImage: `url(${DSP1})`,
+    backgroundSize: 'contain', // Ensures the whole image fits within the div
+    backgroundPosition: 'center', // Centers the image
+    backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+  }}></div>
       <div style={{display: 'flex', justifyContent: 'center'}}>
 
         <Text
@@ -54,16 +54,17 @@ const DesertSafariDubai = () => {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '30px',
-          width: '1200px',
+          maxWidth: '1440px',
           justifyContent: 'center',
           alignItems: 'center',
           margin: 'auto',
-        }}> <div
+        }}>
+          <div
         style={{
           display: 'flex',
           flexWrap: 'wrap',
           gap: '30px',
-          width: '1200px',
+         width: '1200px',
           justifyContent: 'left',
           alignItems: 'left',
           margin: '0px 0px 0px 50px',
@@ -162,13 +163,20 @@ const DesertSafariDubai = () => {
       <div
         style={{
           width: '100%',
-          height: '600px',
+         // height: '600px',
           backgroundImage: `url(${DSP1})`, // Use the imported image variable
-          backgroundSize: 'cover', // Adjusts the size of the background image
-          backgroundPosition: 'left', // Centers the background image
+
+
           backgroundRepeat: 'no-repeat', // Prevents the image from repeating
           paddingLeft:'30px',
-          paddingRight:'30px'
+          paddingRight:'30px',
+          paddingBottom:'10px',
+
+          height: '600px',
+
+          backgroundSize: 'contain', // Ensures the whole image fits within the div
+          backgroundPosition: 'center', // Centers the image
+        
         }}>  <Text
         style={{
           fontSize: '2.5em',
@@ -184,7 +192,7 @@ const DesertSafariDubai = () => {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '30px',
-          width: '1200px',
+          maxWidth: '1440px',
           justifyContent: 'center',
           alignItems: 'center',
           margin: 'auto',
@@ -245,7 +253,7 @@ const DesertSafariDubai = () => {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '30px',
-          width: '1200px',
+          maxWidth: '1440px',
           justifyContent: 'center',
           alignItems: 'center',
           margin: 'auto',
@@ -312,13 +320,14 @@ const DesertSafariDubai = () => {
       <div
         style={{
           width: '100%',
-          height: '600px',
+        // height: '600px',
           backgroundImage: `url(${DSP1})`, // Use the imported image variable
           backgroundSize: 'cover', // Adjusts the size of the background image
           backgroundPosition: 'left', // Centers the background image
           backgroundRepeat: 'no-repeat', // Prevents the image from repeating
           paddingLeft:'30px',
-          paddingRight:'30px'
+          paddingRight:'30px',
+          paddingBottom:'10px'
         }}>  <Text
         style={{
           fontSize: '2.5em',
@@ -334,7 +343,7 @@ const DesertSafariDubai = () => {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '30px',
-          width: '1200px',
+          maxWidth: '1400px',
           justifyContent: 'center',
           alignItems: 'center',
           margin: 'auto',
@@ -343,7 +352,7 @@ const DesertSafariDubai = () => {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '30px',
-          width: '1200px',
+          maxWidth: '1200px',
           justifyContent: 'left',
           alignItems: 'left',
           margin: '0px 0px 0px 50px',

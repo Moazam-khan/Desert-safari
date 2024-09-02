@@ -1,36 +1,39 @@
+import { useBreakpoint } from '@/hooks';
 import bgImage from '@/pages/images/header.jpg';
 import { Typography } from 'antd';
 
 const { Text } = Typography;
 
 const AboutUs = () => {
+
+  const {xs, sm, md,lg} = useBreakpoint();
   return (
     <div style={{
       width: '100%',
       fontFamily: 'Arial',
       background: 'white',
     }}>
-      <div style={{
-        width: '100%',
-        height: '230px',
-        backgroundImage: `url(${bgImage})`, // Use the imported image variable
-        backgroundSize: 'cover', // Adjusts the size of the background image
-        backgroundPosition: 'center', // Centers the background image
-        backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-        position: 'relative',
-        textAlign: 'center',
-        justifyContent: 'center',
-        alignItems: 'center',
-        display: 'flex',
-      }}>
+     <div style={{
+  width: '100%',
+  height: '230px',
+  backgroundImage: `url(${bgImage})`,
+  backgroundSize: 'cover', // Ensures the image covers the div
+  backgroundPosition: 'center', // Centers the image
+  backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+  position: 'relative',
+  textAlign: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+}}>
         <Text style={{
-          fontSize: '2.5em',
+          fontSize: xs ? '1em' : '2.5em',
           fontWeight: 'bold',
           fontFamily: 'Arial',
         }}>About Desert Safari UAE</Text>
       </div>
       <section style={{
-        width: '1140px',
+        maxWidth: '1440px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

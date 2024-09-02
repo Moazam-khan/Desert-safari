@@ -19,6 +19,7 @@ const AppLayout = ({ children }: Props) => {
         width: '100%',
         margin: 'auto',
         background: 'white',
+        paddingLeft:'10px',paddingRight:'10px'
       }}>
       <Header />
       <Content style={{}}>{children}</Content>
