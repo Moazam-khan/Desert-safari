@@ -178,9 +178,9 @@ const DesertSafariDubai = () => {
           paddingRight:'30px',
           paddingBottom:'10px',
 
-          height: '600px',
+        //  height: '600px',
 
-          backgroundSize: 'contain', // Ensures the whole image fits within the div
+          backgroundSize: 'cover', // Ensures the whole image fits within the div
           backgroundPosition: 'center', // Centers the image
 
         }}>  <Text
