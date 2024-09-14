@@ -43,11 +43,11 @@ const expandIcon = (panelProps: any) => {
       {isActive ? (
         <MinusOutlined width={'24px'} height={'24px'}
           style={{
-            color: 'black',
+            color: 'red',
           }} />
       ) : (
         <PlusOutlined width={'24px'} height={'24px'} style={{
-          color: 'black',
+          color: 'yellow',
         }} />
       )}</>
 
@@ -56,6 +56,8 @@ const expandIcon = (panelProps: any) => {
 
 
 const AnswerText = () => {
+
+
   return <Text style={{
     color: '#666666',
     fontFamily: 'Arial',
